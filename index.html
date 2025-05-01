@@ -1,0 +1,46 @@
+<div id="app-container">
+
+  <div id="header">
+    <img id="deriv-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Deriv_logo.svg/512px-Deriv_logo.svg.png" alt="DERIV Logo" />
+    <div id="account-info" hidden></div>
+  </div>
+
+  <div id="logo">WELCOME TO RAE-MANNA</div>
+
+  <section id="auth-section">
+    <button id="login-btn">Login with Deriv</button>
+  </section>
+
+  <section id="trading-section" hidden>
+    <h2>Place a Trade</h2>
+    <label for="symbol-select">Select Symbol:</label>
+    <select id="symbol-select"></select>
+
+    <label for="contract-type">Contract Type:</label>
+    <select id="contract-type">
+      <option value="CALL">Rise</option>
+      <option value="PUT">Fall</option>
+      <option value="DIGITMATCH">Matches</option>
+      <option value="DIGITDIFF">Differs</option>
+      <option value="DIGITEVEN">Even</option>
+      <option value="DIGITODD">Odd</option>
+      <option value="OVER">Over</option>
+      <option value="UNDER">Under</option>
+    </select>
+
+    <label for="stake">Stake Amount (USD):</label>
+    <input type="number" id="stake" placeholder="Stake" />
+
+    <button id="buy-btn">Buy Contract</button>
+    <pre id="buy-response"></pre>
+  </section>
+
+  <section id="copy-section" hidden>
+    <h2>Copy Trading</h2>
+    <label for="master-token">Enter Master Token:</label>
+    <input type="text" id="master-token" placeholder="Master Token" />
+    <button id="start-copy">Start Copying</button>
+    <div id="copy-status"></div>
+  </section>
+
+</div>
